@@ -75,13 +75,13 @@ padding: 20px;
   border-radius: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 750px) {
   .about-section, .skills-section {
     margin-bottom: 20px;
   }
   
   .animated-gif {
-    max-width: 360px;
+    max-width: 330px  !important;
   }
 }
 
