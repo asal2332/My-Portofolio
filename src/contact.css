@@ -1,0 +1,128 @@
+.animated-bg{
+background: linear-gradient(-45deg,#ee7752,rgb(231, 60, 125),#23a6d5,#23d5ab);
+background-size: 400% , 400%;
+animation: gradient 15s ease infinite;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px;
+}
+
+@keyframes gradient{
+0% { background-position: 0% 50%;}
+50% { background-position: 100% 50%;}
+100% {background-position: 0% 50%;} }
+/* ====================================== */
+
+.main-content {
+  z-index: 1;
+  text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+.title{
+      font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  color:#68e6ab !important;
+  text-shadow: 1px rgba(0, 0, 0, 0.8);
+  font-style: normal;
+  margin-bottom: 66px !important;
+  font-size: 58px !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 28px !important;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.social-links{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #f8f9fa;
+  text-decoration: underline;
+}
+
+.video-container {
+margin-top: 20px;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  border-radius: 10px;
+}
+
+.animated-gif{
+width: 540px !important;
+margin: auto !important;
+padding: auto !important;
+}
+
+.video-placeholder {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px 10px;
+  }
+  
+  .social-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .social-links a {
+    margin: 5px 0;
+  }
+  
+  .video-container {
+    margin-top: 30px;
+  }
+}
+/* ============================bt-home= */
+    .btn-home{
+   position: fixed ;
+   top: 5px ;
+   left: 8px;
+   padding: 10px;
+   font-size: 26px;
+   z-index: 1000 !important;
+}
+
+.btn-linkdin2{
+   position: fixed ;
+   top: -2px ;
+   left: 45px !important;
+   padding: 15px;
+   font-size: 31px !important;
+   z-index: 1000 !important;
+}
+
+.btn-github1{
+  position: fixed ;
+   top: 3px ;
+   left: 85px;
+   padding: 10px;
+   font-size: 31px !important;
+   z-index: 1000 !important;
+}
+
+  @media (max-width: 768px){
+    .btn-home{
+        padding: 15px 16px !important;
+    }
+
+  }

@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 2s;
+}
+.animated-bg{
+background: linear-gradient(-45deg,#ee7752,rgb(231, 60, 125),#23a6d5,#23d5ab);
+background-size: 400% , 400%;
+animation: gradient 15s ease infinite;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px;
+}
+
+@keyframes gradient{
+0% { background-position: 0% 50%;}
+50% { background-position: 100% 50%;}
+100% {background-position: 0% 50%;} }
+
+
+    .profile-card {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px; 
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Parkinsans:wght@300..800&family=Pompiere&display=swap');
+
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+color: rgb(59, 59, 59) !important;
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+p {
+  font-size: 1.3rem !important;
+  margin-bottom: 1.5rem;
+
+  font-family: "Gruppo", sans-serif;
+  font-weight: 450 !important;
+  font-style: normal;
+
+}
+
+.card{
+  background-color: rgba(180, 173, 173, 0.21) !important;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  p {
+    font-size: 1.1rem;
+  }
+  
+  .btn-container {
+    flex-direction: row; 
+    justify-content: center;
+  }
+}
+.btn1{
+  background: #e73c7e;
+  border-radius: 16px;
+  padding: 3px;
+  cursor: pointer;
+    text-decoration: none;
+   list-style-type: none;
+}
+.btn2{
+  background: #23a6d5 ;
+    border-radius: 16px;
+  padding: 5px;
+   cursor: pointer;
+     text-decoration: none;
+   list-style-type: none;
+}
+.btn3{
+   background: #23d5ab;
+     border-radius: 16px;
+  padding: 3px;
+   cursor: pointer;
+   text-decoration: none;
+   list-style-type: none;
+}
+.btn1:hover{
+  background-color:#e6598fbe;
+}
+.btn2:hover{
+  background-color: #5fabc7b8;
+}
+.btn3:hover{
+  background-color: #58c4aa85;
+}
+
+
+.app:has(~ .projects-page) {
+  display: none !important;
+}
+
+    .btn-github{
+   position: fixed ;
+   top: -6px ;
+   left: -3px;
+   padding: 10px;
+   font-size: 26px;
+   z-index: 1000 !important;
+}
+
+  @media (max-width: 768px){
+    .btn-home{
+        padding: 4px 8px;
+    }
+  }
+a:hover{
+    cursor: pointer;
+}
+    .btn-linkdin{
+   position: fixed ;
+   top: -6px ;
+   left: 32px;
+   padding: 10px;
+   font-size: 26px;
+   z-index: 1000 !important;
+}
+
+  @media (max-width: 768px){
+    .btn-linkdin{
+        padding: 10px 4px;
+    }
+  }
